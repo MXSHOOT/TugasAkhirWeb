@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="../assets/css/Team-Grid.css">
     <link rel="stylesheet" href="../assets/css/Testimonials.css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <script src="../assets/js/valid.js"></script>
 </head>
 
 <body>
@@ -49,53 +50,54 @@
                 <li class="breadcrumb-item"><a href="regput.html">Register</a></li>
                 <li class="breadcrumb-item active">Registrasi Wisata Kuliner</li>
             </ol>
-        <form>
-            <fieldset style="border: 2px solid black;">
+        </nav>
+        <form form name="formPendaftaran" onsubmit="return validateForm()"> 
+           
                 <legend class="w-auto">Form Registrasi Tempat Rekreasi Wisata</legend>
-                <div>
+                <div class="form-group">
                     <label for="ntwisata" class="col-sm-2 col-form-label col-form-label-sm">Nama Tempat Wisata :</label>
-                    <input type="text" id="ntwisata" name="nama" value="" size="30px">
+                    <input type="text" size="30px" name="nama" placeholder="wisata" class="form-control" required maxlength="30" minlength="3" id="nm">
                 </div>
-                <div>
-                    <label for="jwisata" class="col-sm-2 col-form-label col-form-label-sm">Jenis Wisata :</label>
-                    <select name="jwisata" id="jwisata">
-                        <option>(none) </option>
-                        <option>Taman</option>
-                        <option>Kebun Binatang</option>
-                        <option>Pantai</option>
-                    </select>
+                <div class="form-group">
+                    <label for="ntwisata" class="col-sm-2 col-form-label col-form-label-sm">Jenis Wisata:</label>
+                        <select name="jw" class="form-control" id="jw">
+                            <option value="0">Pilih Wisata</option>
+                            <option value="1">Wisata Rekreasi</option>
+                            <option value="2">Wisata Kuliner</option>
+                        </select>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="deswisata" class="col-sm-2 col-form-label col-form-label-sm">Deskripsi Wisata :</label>
-                    <textarea id="deskripsi" name="deswisata" rows="4" cols="50" style="width: 20%"></textarea>
+                    <input type="text" size="30px" name="dw" placeholder="deskripsi" class="form-control" required maxlength="30" minlength="3" id="dw">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="kperson" class="col-sm-2 col-form-label col-form-label-sm">Kontak Person :</label>
-                    <input type="text" id="kperson" name="kontak" value="" size="30px">
+                    <input type="text" size="30px" name="kp" placeholder="person" class="form-control" required maxlength="30" minlength="3" id="kp">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="noTelpon" class="col-sm-2 col-form-label col-form-label-sm">No HP/Telepon :</label>
-                    <input type="number" id="noTelpon" name="noTelpon" value="" size="30px">
+                    <input type="text" size="30px" name="tlp" placeholder="telpon" class="form-control" required maxlength="30" minlength="3" id="tlp">
                 </div>
-                <div>
-                    <label for="email" class="col-sm-2 col-form-label col-form-label-sm">Email :</label>
-                    <input type="email" id="email" name="email" value="" size="30px">
+                <div class="form-group">
+                    <label for="deswisata" class="col-sm-2 col-form-label col-form-label-sm">Email :</label>
+                    <input type="email" name="email" placeholder="Email Aktif" class="form-control" id="email">
+                    <small id="emailHelp" class="form-text text-muted">Email Akan Digunakan Untuk Mengirimkan Notifikasi.</small>
                 </div>
-                <div>
+                <div class="form-group"> 
                     <label for="alamatweb" class="col-sm-2 col-form-label col-form-label-sm">Alamat Web :</label>
-                    <input type="text" id="alamatweb" name="alamatweb" value="https://" size="30px">
+                    <input type="text" size="30px" name="web" value="https://" placeholder="web" class="form-control" required maxlength="30" minlength="3" id="web">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="address" class="col-sm-2 col-form-label col-form-label-sm">Alamat Lengkap:</label>
-                    <textarea id="address" name="address" rows="4" cols="50" style="width: 20%"></textarea>
+                    <input type="text" size="30px" name="al" placeholder="alamat" class="form-control" required maxlength="30" minlength="3" id="al">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="lotlong" class="col-sm-2 col-form-label col-form-label-sm">Lotitude,Longitude :</label>
-                    <input type="text" id="lotlong" name="alamatweb" value="" size="30px">
+                    <input type="text" size="30px" name="lt" placeholder="Lotitude" class="form-control" required maxlength="30" minlength="3" id="lt">
                 </div>
-                <button class="btn btn-primary" type="submit">Daftar</button>
+                <button type="submit" class="btn btn-primary" onclick="getForm()">Daftar</button>
                 <button class="btn btn-secondary" type="submit">Batal</button>
-            </fieldset>
+            
         </form>
     </div>
     <div class="footer-basic">
