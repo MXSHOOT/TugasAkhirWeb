@@ -1,0 +1,12 @@
+
+.breadcrumb{
+    background: transparent;
+}
+
+.breadcrumb-item{
+    font-size: 12px;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">";
+}
