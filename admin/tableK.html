@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>tugasakhir</title>
+    <title>SIWIKODE - ADMIN</title>
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="../assets/fonts/ionicons.min.css">
@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="../assets/css/Team-Grid.css">
     <link rel="stylesheet" href="../assets/css/Testimonials.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/styless.css">
+
 </head>
 
 <body>
@@ -36,9 +36,9 @@
                 <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="wisataR-a.html">Wisata Rekreasi</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="wisataK-a.html">Wisata Kuliner</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-a.html">About</a></li>
-                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Setting</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="admin.html">Admin</a><a class="dropdown-item" role="presentation" href="regput.html">Register</a><a class="dropdown-item" role="presentation" href="../index.html">log out</a>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-a.html">Tentang</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Pengaturan</a>
+                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="admin.html">Admin</a><a class="dropdown-item" role="presentation" href="regput.html">Pendaftaran</a><a class="dropdown-item" role="presentation" href="../index.html">Keluar</a>
                         </div>
                     </li>
                 </ul>
@@ -48,27 +48,143 @@
         <div class="container">
             <nav>
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index-a.html">Home</a></li>
+                    <li class="breadcrumb-item"><a href="index-a.html">Rumah</a></li>
                     <li class="breadcrumb-item"><a href="admin.html">Admin</a></li>
                     <li class="breadcrumb-item active">Kelola Wisata Kuliner</li>
                 </ol>
             </nav> 
-            <legend class="w-auto">Form Registrasi Tempat Wisata Kuliner</legend>
+            <!-- <legend class="w-auto">Form Registrasi Tempat Wisata Kuliner</legend>
             <div id="container" style="width:700px;">
+            </div> -->
+            <div class="countainer">
+                <fieldset style="border: 2px solid black; ">
+                <legend  class="w-auto">Form Registrasi Tempat Wisata Kuliner</legend>                
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr class="text-center">
+                            <th scope="col">No</th>
+                            <th scope="col">Nama</th>
+                            <th scope="col">Jenis Wisata</th>
+                            <th scope="col">Rating</th>
+                            <th scope="col">Kontak Person</th>
+                            <th scope="col">Upload Foto</th>
+                            <th scope="text-right"> Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <th>1</th>
+                                <td>Anis Matta</td>
+                                <td>Soto Bu Tjondro</td>
+                                <td>
+                                    <div class="text-center"color=yellow >
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </td>
+                                <td>Anis</td>
+                                <td class="text-center">
+                            <button class="btn btn-warning shadow-sm"><a data-fancybox="gallery" class="primary-btn" href="../assets/img/testimoni/download.jpg">Upload</a></button> </td>
+                            <td class="text-center">
+                                <button class="btn btn-success rounded-pill" style="width:75px" onclick="window.location.href='wisataKD1-a.html'"><i class="fa fa-eye" aria-hidden="true"></i> </button>
+                                <button class="btn btn-primary rounded-pill" style="width:75px" onclick="window.location.href='tk/tambahK-1.html'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </button>
+                                <button class="btn btn-danger rounded-pill" style="width:75px" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i></button>
+                            </td>                            
+                        </tr>
+
+                        <tr class="text-center">
+                            <th>2</th>
+                                <td>Albert Einstein</td>
+                                <td>Waroeng Spesial Sambal</td>
+                                <td>
+                                    <div class="text-center"color=yellow >
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </td>
+                                <td>Albert</td>
+                                <td class="text-center">
+                            <button class="btn btn-warning shadow-sm"><a data-fancybox="gallery" class="primary-btn" href="../assets/img/testimoni/https___blogs-images.forbes.com_rainerzitelmann_files_2019_06_E0MG76-e1560965378507-1200x1270.jpg">Upload</a></button> </td>
+                            <td class="text-center">
+                                <button class="btn btn-success rounded-pill" style="width:75px" onclick="window.location.href='wisataKD2-a.html'"><i class="fa fa-eye" aria-hidden="true"></i> </button>
+                                <button class="btn btn-primary rounded-pill" style="width:75px" onclick="window.location.href='../404/404.html'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </button>
+                                <button class="btn btn-danger rounded-pill" style="width:75px" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i></button>
+                            </td>                            
+                        </tr>
+
+                        <tr class="text-center">
+                            <th>3</th>
+                                <td>Bill Gates</td>
+                                <td>Mang Engking</td>
+                                <td>
+                                    <div class="text-center"color=yellow >
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </div>
+                                </td>
+                                <td>Bill</td>
+                                <td class="text-center">
+                            <button class="btn btn-warning shadow-sm"><a data-fancybox="gallery" class="primary-btn" href="../assets/img/testimoni/XpgonN0X_400x400.jpg">Upload</a></button> </td>
+                            <td class="text-center">
+                                <button class="btn btn-success rounded-pill" style="width:75px" onclick="window.location.href='wisataKD3-a.html'"><i class="fa fa-eye" aria-hidden="true"></i> </button>
+                                <button class="btn btn-primary rounded-pill" style="width:75px" onclick="window.location.href='../404/404.html'"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> </button>
+                                <button class="btn btn-danger rounded-pill" style="width:75px" data-toggle="modal" data-target="#exampleModal"><i class="fa fa-trash"></i></button>
+                            </td>                            
+                        </tr>
+                    </tbody>
+
+
+                </table>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Penghapusan Data</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                        Apakah anda ingin menghapus data anda?
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Keluar</button>
+                        <button type="button" class="btn btn-primary" onclick="window.location.href='../404/404.html'">Ya</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.css" rel="stylesheet" />
+                
+
+                <button class="btn btn-secondary" onclick="window.location.href='tambahK.html'">Tambah Baru</button>
+                <hr>
+                </fieldset>
             </div>
-            
     
     <div class="footer-basic">
         <footer>
-            <p class="copyright">Company Name © 2017</p>
+            <p class="copyright">STT NF TEKNIK INFORMATIKA © 2021</p>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.0/jquery.fancybox.min.css">
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
     
 </body>
-<script>
+<!-- <script>
     var crudApp = new function () {
 
         // An array of JSON objects with values.
@@ -328,6 +444,6 @@
     }
 
     crudApp.createTable();
-</script>
+</script> -->
 
 </html>
